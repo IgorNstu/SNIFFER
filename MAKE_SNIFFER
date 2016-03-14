@@ -1,0 +1,6 @@
+OBJ = main.o cap.o
+FLAGS = -lpcap
+all : $(OBJ)
+	gcc -o sniffer $(OBJ) $(FLAGS)
+main.o : ad.h
+cap.o : ad.h
